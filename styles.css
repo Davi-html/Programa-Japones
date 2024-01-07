@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Japan';
 }
 
 @font-face {
@@ -10,4 +11,114 @@
     src: url("/fonts/Japan.ttf");
     font-weight: 700;
 }
-  
+
+body {
+    background: linear-gradient(#0D0A10, #201317);
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-principal {
+    background-image: url(/assets/Ilustração\ Header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    z-index: 10;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container p {
+    width: 189px;
+    color: #F2EFF5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+#color-red {
+    color: #EC1334;
+}
+
+#text-sec-principal {
+    margin-bottom: 50px;
+}
+
+#play {
+    animation: grow-shrink 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes grow-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.balao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.balao p {
+    width: 250px;
+    height: 44px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.balao p span {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.matricula {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    opacity: 0.6;
+    width: 205px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    width: 205px;
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(236, 19, 52, 0.00) 0%, #EC1334 48.96%, rgba(236, 19, 52, 0.00) 100%);
+    margin-top: 66px;
+    margin-bottom: 53px;
+}
