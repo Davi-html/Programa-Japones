@@ -200,4 +200,26 @@ header {
     line-height: normal;
 }
 
+.depoimentos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
+.depoimentos h1 {
+    margin-bottom: 30px;
+}
+
+.iframes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.iframes iframe {
+    height: 176px;
+    width: 312px;
+}   
