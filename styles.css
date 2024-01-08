@@ -330,6 +330,17 @@ footer #btn-matricula {
     margin: 20px;
 }
 
+#termos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2EFF5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
 .direitos{
     margin-top: 45px;
     color: rgba(242, 239, 245, 0.80);
