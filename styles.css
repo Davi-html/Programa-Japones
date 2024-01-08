@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Inter;
 }
 
 @font-face {
@@ -24,7 +25,7 @@ header {
     align-items: center;
 }
 
-.sec-principal {
+.sec-all {
     background-image: url(/assets/Ilustração\ Header.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -46,7 +47,6 @@ header {
     width: 189px;
     color: #F2EFF5;
     text-align: center;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -57,7 +57,7 @@ header {
     color: #EC1334;
 }
 
-#text-sec-principal {
+#text-sec-all {
     margin-bottom: 50px;
 }
 
@@ -89,7 +89,6 @@ header {
     width: 250px;
     height: 44px;
     text-align: center;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -97,7 +96,6 @@ header {
 }
 
 .balao p span {
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -107,7 +105,9 @@ header {
 .matricula {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
 
 .hr {
@@ -122,3 +122,82 @@ header {
     margin-top: 66px;
     margin-bottom: 53px;
 }
+
+.content {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.content h1 {
+    width: 310px;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.18px;
+}
+
+.content p {
+    width: 312px;
+    color: rgba(242, 239, 245, 0.80);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; 
+}
+
+#px58{
+    width: 60px;
+}
+
+.div-img {
+    background-color: white;
+    width: 312px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1px solid #D5CBD3;
+}
+
+.div-img img {
+    margin-left: 10px;
+}
+
+.div-img input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-radius: 8px;
+}
+
+.div-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#btn-matricula{
+    height: 56px;
+    padding: 16px;
+    background-color: #EC1334;
+    border: none;
+    color: white;
+    border-radius: 8px;
+
+    margin-top: calc(24px - 8px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
