@@ -17,6 +17,10 @@ body {
     background: linear-gradient(#0D0A10, #201317);
 }
 
+span.hamburger-box{
+    color: white;
+}
+
 header {
     width: 100%;
     height: 72px;
@@ -27,9 +31,9 @@ header {
 
 .sec-all {
     background-image: url(/assets/Ilustração\ Header.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     height: 100vh;
 }
 
@@ -103,11 +107,12 @@ header {
 }
 
 .matricula {
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
+    margin-bottom: 78px;
 }
 
 .hr {
@@ -208,7 +213,7 @@ header {
     align-items: center;
     height: auto;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 160px;
 }
 
 .depoimentos h1 {
@@ -259,7 +264,9 @@ header {
 .foto {
     position: absolute;
     top: 260px;
-    left: 78px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #foto-dono {
@@ -309,7 +316,7 @@ header {
     line-height: 21px;
 }
 
-footer {
+.footer {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -317,12 +324,12 @@ footer {
     color: white;
 }
 
-footer h1 {
+.footer h1 {
     text-align: center;
     width: 310px;
 }
 
-footer #btn-matricula {
+.footer #btn-matricula {
     margin-bottom: 45px;
 }
 
@@ -356,4 +363,131 @@ footer #btn-matricula {
     font-style: normal;
     font-weight: 300;
     line-height: 25px;
+}
+
+@media (min-width: 810px){
+    .sec-all {
+        background-image: url(/assets/Ilustração\ Header-desktop.png);
+        background-size: 107% 100%;
+    }
+
+    .matricula .hr {
+        display: none;
+    }
+
+    #bandeira {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .content h1 {
+        width: 420px;
+    }
+    .content p {
+        width: 574px;
+    }
+
+    #seguranca p {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    #seguranca a {
+        color: #FFF;
+
+    }
+
+    #seguranca {
+        display: flex;
+        gap: 11px;
+    }
+
+    #seguranca input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .div-input .div-img {
+        width: 100%;
+    }
+
+    #dragao {
+        color: #F2EFF5;
+        text-align: center;
+        font-size: 38px;
+        margin-top: 64px;
+        margin-bottom: 16px;
+    }
+
+    .iframes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .depoimentos {
+        margin-bottom: 15px;
+    }
+
+    .description{
+        width: 489px;
+        margin: 0 auto;
+    }
+
+    #termos {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 66px;
+        margin-top: 66px;
+    }
+
+    .footer input#btn-matricula {
+        margin: 0px;
+    }
+
+    .footer .hr {
+        display: none;
+    }
+
+    .desktop {
+        width: 100%;
+        display: flex;
+        gap: 17px;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .desktop a {
+        color: #FFF;
+        text-decoration: none;
+
+    }
+}
+
+@media (max-width: 810px){
+    #bandeira {
+        display: none;
+    }
+
+    #seguranca {
+        display: none;
+    }
+
+    #dragao {
+        display: none;
+    }
+
+    footer .desktop {
+        display: none;
+    }
 }
