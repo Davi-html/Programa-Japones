@@ -17,10 +17,6 @@ body {
     background: linear-gradient(#0D0A10, #201317);
 }
 
-span.hamburger-box{
-    color: white;
-}
-
 header {
     width: 100%;
     height: 72px;
@@ -470,7 +466,19 @@ header {
     .desktop a {
         color: #FFF;
         text-decoration: none;
+    }
 
+    .perfil{
+        position: relative;
+    }
+
+    .sakura {
+        position: inherit;
+        top: 200px;
+    }
+
+    .div-balao-perfil {
+        display: none;
     }
 }
 
@@ -487,7 +495,13 @@ header {
         display: none;
     }
 
-    footer .desktop {
+    .desktop {
         display: none;
+    }
+}
+
+@media (min-width: 810px){
+    .matricula {
+        margin-bottom: 160px;
     }
 }
